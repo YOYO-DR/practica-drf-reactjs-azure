@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const tasksApi=axios.create({
-  baseURL:'http://localhost:8000/tasks/api/v1/tasks/'
-})
+const tasksApi = axios.create({
+  baseURL: "https://drf-reactjs.azurewebsites.net//tasks/api/v1/tasks/",
+});
 //como es get, debe terminar en "/", importante de django
 export const getAllTasks = () => tasksApi.get("/"); 
 // el "/" es que lo manda a la misma ruta

@@ -11,7 +11,7 @@ DEBUG = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    #debe estar antes de ese common
+    #debe estar antes de ese common, lo de la seguridad de cors
     "corsheaders.middleware.CorsMiddleware",
     # Add whitenoise middleware after the security middleware
     'whitenoise.middleware.WhiteNoiseMiddleware',
